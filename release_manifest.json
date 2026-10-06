@@ -1,0 +1,548 @@
+{
+  "status": "verified_complete",
+  "repository": "Bear-Lan/sim_real_data",
+  "tag": "dataset-20261006",
+  "total_episodes": 600,
+  "total_raw_bytes": 121754669760,
+  "groups": [
+    {
+      "name": "real-Adjust_Bottle",
+      "kind": "real",
+      "task": "Adjust_Bottle",
+      "archive_bytes": 1694603687,
+      "sha256": "7ec82e9c50cfe09a9507f457359e5fd9df1896b47318179d2fe1f8ea24d5fd93",
+      "parts": [
+        {
+          "name": "real-Adjust_Bottle.tar.gz.part001",
+          "bytes": 1694603687,
+          "sha256": "7ec82e9c50cfe09a9507f457359e5fd9df1896b47318179d2fe1f8ea24d5fd93",
+          "asset_id": 614831980
+        }
+      ]
+    },
+    {
+      "name": "real-Grab_Roller",
+      "kind": "real",
+      "task": "Grab_Roller",
+      "archive_bytes": 996782126,
+      "sha256": "6e609bdec7cdde57de2a86b21ac6ddbf2a20c12d8ec305272fc0130a3bc89b6f",
+      "parts": [
+        {
+          "name": "real-Grab_Roller.tar.gz.part001",
+          "bytes": 996782126,
+          "sha256": "6e609bdec7cdde57de2a86b21ac6ddbf2a20c12d8ec305272fc0130a3bc89b6f",
+          "asset_id": 614838528
+        }
+      ]
+    },
+    {
+      "name": "real-Stack_Bowls_Two",
+      "kind": "real",
+      "task": "Stack_Bowls_Two",
+      "archive_bytes": 1663551935,
+      "sha256": "67c63d015f84d95b0a1e4713f0dffa41ac92932459fa66beec0a2a0405961b89",
+      "parts": [
+        {
+          "name": "real-Stack_Bowls_Two.tar.gz.part001",
+          "bytes": 1663551935,
+          "sha256": "67c63d015f84d95b0a1e4713f0dffa41ac92932459fa66beec0a2a0405961b89",
+          "asset_id": 614843849
+        }
+      ]
+    },
+    {
+      "name": "sim-Adjust_Bottle",
+      "kind": "sim",
+      "task": "Adjust_Bottle",
+      "archive_bytes": 28117110014,
+      "sha256": "ae1e33cc821d616d0763c8ee5a1daa97d1883460ebc67cc2d5629729e7575286",
+      "parts": [
+        {
+          "name": "sim-Adjust_Bottle.tar.gz.part001",
+          "bytes": 1800000000,
+          "sha256": "61fe162b2dde11f1e7f2554f1b858d3a333c783ec33c4b924aee912e712aebe6",
+          "asset_id": 615756048
+        },
+        {
+          "name": "sim-Adjust_Bottle.tar.gz.part002",
+          "bytes": 1800000000,
+          "sha256": "e013b49fd5d177722ce977cc56136c9f38a1556c04e0a3e16945988e79020d79",
+          "asset_id": 615763108
+        },
+        {
+          "name": "sim-Adjust_Bottle.tar.gz.part003",
+          "bytes": 1800000000,
+          "sha256": "631465881317dbc7bcdcfdcde4779e827f0115b8cdf35f097c83364fbd8eeac1",
+          "asset_id": 615770443
+        },
+        {
+          "name": "sim-Adjust_Bottle.tar.gz.part004",
+          "bytes": 1800000000,
+          "sha256": "b488bc66a1162e96e608500aa81c656f71b543190d8e37eac9734d855465a9a1",
+          "asset_id": 615778112
+        },
+        {
+          "name": "sim-Adjust_Bottle.tar.gz.part005",
+          "bytes": 1800000000,
+          "sha256": "6ee1aef7040ad3296ffa99437ed6774abab8ddbe4b3b7a1aeda0de205ecf3a8f",
+          "asset_id": 615784848
+        },
+        {
+          "name": "sim-Adjust_Bottle.tar.gz.part006",
+          "bytes": 1800000000,
+          "sha256": "b2922e1e2c144d2fb812072737046c879727a3a3a04293f378e7958fb7cd099c",
+          "asset_id": 615792192
+        },
+        {
+          "name": "sim-Adjust_Bottle.tar.gz.part007",
+          "bytes": 1800000000,
+          "sha256": "21a0f3a595544f29c962206a863ab875fe5bb2b322bd8341fe9bf6f61bff41b6",
+          "asset_id": 615799806
+        },
+        {
+          "name": "sim-Adjust_Bottle.tar.gz.part008",
+          "bytes": 1800000000,
+          "sha256": "3a062ac7f40962dd1ce9b019b47fcbabfba6acac4eca37da84e1f4973d591083",
+          "asset_id": 615808622
+        },
+        {
+          "name": "sim-Adjust_Bottle.tar.gz.part009",
+          "bytes": 1800000000,
+          "sha256": "8e406801fff890a9d1d2f0a12cfc4053ad2c604bcddc5b638f55270a14ea476d",
+          "asset_id": 615816159
+        },
+        {
+          "name": "sim-Adjust_Bottle.tar.gz.part010",
+          "bytes": 1800000000,
+          "sha256": "a5d4992b46c2de46f31f2a4f8ca04fd4fa768ae980beadd59d24f95cab22fa64",
+          "asset_id": 615825460
+        },
+        {
+          "name": "sim-Adjust_Bottle.tar.gz.part011",
+          "bytes": 1800000000,
+          "sha256": "673af7c0f8edb1883778ec34fbe28d2ab660d8482d425d64ea2118166c82fd05",
+          "asset_id": 615834730
+        },
+        {
+          "name": "sim-Adjust_Bottle.tar.gz.part012",
+          "bytes": 1800000000,
+          "sha256": "6ed49f541d58830218f9b73be9d9a2460e8108ab8c863aea71ead4c195850f44",
+          "asset_id": 615842611
+        },
+        {
+          "name": "sim-Adjust_Bottle.tar.gz.part013",
+          "bytes": 1800000000,
+          "sha256": "cb61b20946c7809760e925e2f40de4d96e0573939502ddbc5d2f6dbf78086baa",
+          "asset_id": 615850489
+        },
+        {
+          "name": "sim-Adjust_Bottle.tar.gz.part014",
+          "bytes": 1800000000,
+          "sha256": "8e12e35127e928f5aa68ba64b8e09f26c62478db68f9134d78c364f75cd95afc",
+          "asset_id": 615860042
+        },
+        {
+          "name": "sim-Adjust_Bottle.tar.gz.part015",
+          "bytes": 1800000000,
+          "sha256": "9a848e48f0177eec9e58506eea601fe15c642b15cc295b166c5e78a3751dd65e",
+          "asset_id": 615867251
+        },
+        {
+          "name": "sim-Adjust_Bottle.tar.gz.part016",
+          "bytes": 1117110014,
+          "sha256": "8827a93db20914f3672bca2cd85f2e4a04f6489b3b1d19a79bff840518952c01",
+          "asset_id": 615874771
+        }
+      ]
+    },
+    {
+      "name": "sim-Grab_Roller",
+      "kind": "sim",
+      "task": "Grab_Roller",
+      "archive_bytes": 18636131016,
+      "sha256": "b2b38da936ff92883ed8a56ff95c7aebf9136ed82d81fbcd4f347c8ddce3c043",
+      "parts": [
+        {
+          "name": "sim-Grab_Roller.tar.gz.part001",
+          "bytes": 1800000000,
+          "sha256": "fa482e08cbfa117bf8796ee39b7d59d54a63c18bdadeb849cf2b022cdf1cc511",
+          "asset_id": 615880708
+        },
+        {
+          "name": "sim-Grab_Roller.tar.gz.part002",
+          "bytes": 1800000000,
+          "sha256": "8b665b7376b26909a647be978ac642fae8553c7c479f7e165873befe0d008318",
+          "asset_id": 615887282
+        },
+        {
+          "name": "sim-Grab_Roller.tar.gz.part003",
+          "bytes": 1800000000,
+          "sha256": "3153b730c775ba62992c7827b0d0e5b46c256ce19cf8b93b56886bc8672805e5",
+          "asset_id": 615894872
+        },
+        {
+          "name": "sim-Grab_Roller.tar.gz.part004",
+          "bytes": 1800000000,
+          "sha256": "4dd49978bd862269283a2e1f8393da811665ea473e3b4df7ba1261ddb6f2b128",
+          "asset_id": 615903717
+        },
+        {
+          "name": "sim-Grab_Roller.tar.gz.part005",
+          "bytes": 1800000000,
+          "sha256": "dd2d22c6c6b143287f0e82839ec4417953eae8fe39d541a06f4b3c1aaf3c12d0",
+          "asset_id": 615911619
+        },
+        {
+          "name": "sim-Grab_Roller.tar.gz.part006",
+          "bytes": 1800000000,
+          "sha256": "10397362e7bcac068da50d52880fddd5f4cd39639bd1158e1f99c92f434fb116",
+          "asset_id": 615918396
+        },
+        {
+          "name": "sim-Grab_Roller.tar.gz.part007",
+          "bytes": 1800000000,
+          "sha256": "5fc27cb8d056a71cc523943d77b4a7e30b40d8f016f61477b1effc531f224058",
+          "asset_id": 615926030
+        },
+        {
+          "name": "sim-Grab_Roller.tar.gz.part008",
+          "bytes": 1800000000,
+          "sha256": "a5633c3f3238784c708f0b4e59ce1e85fc06398cd887e3bae01cee96fb0cbde3",
+          "asset_id": 615933575
+        },
+        {
+          "name": "sim-Grab_Roller.tar.gz.part009",
+          "bytes": 1800000000,
+          "sha256": "0cc534a3a6c0e05f865a2a2c4d77ab49416241fdf912b9d95964d5533d0718aa",
+          "asset_id": 615940656
+        },
+        {
+          "name": "sim-Grab_Roller.tar.gz.part010",
+          "bytes": 1800000000,
+          "sha256": "c3be6987cdbf5a538bb14580aa5364c940b820c42da12ae0adbcdec64843fe39",
+          "asset_id": 615947729
+        },
+        {
+          "name": "sim-Grab_Roller.tar.gz.part011",
+          "bytes": 636131016,
+          "sha256": "f476591ade7e80200830ae964b412591d654afac2c1fe2f2788981a90b2fd3d3",
+          "asset_id": 615954850
+        }
+      ]
+    },
+    {
+      "name": "sim-Stack_Bowls_Two",
+      "kind": "sim",
+      "task": "Stack_Bowls_Two",
+      "archive_bytes": 65299565030,
+      "sha256": "2d2c5d134e6dce4ee654dc3a5c9d28420e2d8c7610ed7bb08feaf28ece99b354",
+      "parts": [
+        {
+          "name": "sim-Stack_Bowls_Two.tar.gz.part001",
+          "bytes": 1800000000,
+          "sha256": "1c5b2307eb9ecd0f4d4c3de589cbe974f7cd67083b2ac8b8306fb076392f7f63",
+          "asset_id": 615995699
+        },
+        {
+          "name": "sim-Stack_Bowls_Two.tar.gz.part002",
+          "bytes": 1800000000,
+          "sha256": "8e733ca86294c298040a519f89cb0e4d937c5d02e999288c1d302cbd8bb401b3",
+          "asset_id": 616001751
+        },
+        {
+          "name": "sim-Stack_Bowls_Two.tar.gz.part003",
+          "bytes": 1800000000,
+          "sha256": "87c13c9eb781c0354b427602aac2ef079b80ae6860a6f9a6aaede8f88be31e51",
+          "asset_id": 616010387
+        },
+        {
+          "name": "sim-Stack_Bowls_Two.tar.gz.part004",
+          "bytes": 1800000000,
+          "sha256": "dc5c00d12fe6062a59d3a001c1208460c17423c5b7ca84f9133ceb9f0cec7a6b",
+          "asset_id": 616017124
+        },
+        {
+          "name": "sim-Stack_Bowls_Two.tar.gz.part005",
+          "bytes": 1800000000,
+          "sha256": "c969d54ffa2071844a968e9264fa88068fe1e3c96fc2cb6353585456b0340dc0",
+          "asset_id": 616024446
+        },
+        {
+          "name": "sim-Stack_Bowls_Two.tar.gz.part006",
+          "bytes": 1800000000,
+          "sha256": "906bf1fbc90c41ec0d9fb1b55c5a9683d8fa9acda86f1e47449c1da644ba0c03",
+          "asset_id": 616031976
+        },
+        {
+          "name": "sim-Stack_Bowls_Two.tar.gz.part007",
+          "bytes": 1800000000,
+          "sha256": "b08e2f708ba33543a121ae4f0d30c8f64a3b30de2b3aee6db215ae776fda4dfe",
+          "asset_id": 616039077
+        },
+        {
+          "name": "sim-Stack_Bowls_Two.tar.gz.part008",
+          "bytes": 1800000000,
+          "sha256": "31ec53423bcba0bd371a8150ba0cbf75316531ef7de41b4b6f7cf03f428197c7",
+          "asset_id": 616047085
+        },
+        {
+          "name": "sim-Stack_Bowls_Two.tar.gz.part009",
+          "bytes": 1800000000,
+          "sha256": "66697b0784bde63db124cf298ff12c44cc9b7af7b034ca3a408241fc636a812d",
+          "asset_id": 616053592
+        },
+        {
+          "name": "sim-Stack_Bowls_Two.tar.gz.part010",
+          "bytes": 1800000000,
+          "sha256": "4bcb4347a5141e056d26aa208d3b437dec1d33aabe74db02bf63735a0988f3dd",
+          "asset_id": 616060459
+        },
+        {
+          "name": "sim-Stack_Bowls_Two.tar.gz.part011",
+          "bytes": 1800000000,
+          "sha256": "360801499a413120a531b907814d4b4e9d8ef95836f4e41bc61c6ff30430c526",
+          "asset_id": 616066958
+        },
+        {
+          "name": "sim-Stack_Bowls_Two.tar.gz.part012",
+          "bytes": 1800000000,
+          "sha256": "a443210dac25e216d87c512329dd84b2d18bc5a837ada739b9072d9530138dee",
+          "asset_id": 616073781
+        },
+        {
+          "name": "sim-Stack_Bowls_Two.tar.gz.part013",
+          "bytes": 1800000000,
+          "sha256": "7b4a736eaae651d8d6fffac7c9a97e5e9e0ddbd4021a1efc66f3d177cdc8d066",
+          "asset_id": 616079832
+        },
+        {
+          "name": "sim-Stack_Bowls_Two.tar.gz.part014",
+          "bytes": 1800000000,
+          "sha256": "e0eab9e679733a45b00992a8f5c945d9a7216e3b264553d21c343d7b7eb52666",
+          "asset_id": 616088294
+        },
+        {
+          "name": "sim-Stack_Bowls_Two.tar.gz.part015",
+          "bytes": 1800000000,
+          "sha256": "5176325f830de5ca79dfeaaacf266d988abbdf396737ce5c369e4ab8f3239c23",
+          "asset_id": 616096245
+        },
+        {
+          "name": "sim-Stack_Bowls_Two.tar.gz.part016",
+          "bytes": 1800000000,
+          "sha256": "d4c1aff11f2368064423ac3bbe81baabf4f9ba352332c6cabca5bd33117601bc",
+          "asset_id": 616104037
+        },
+        {
+          "name": "sim-Stack_Bowls_Two.tar.gz.part017",
+          "bytes": 1800000000,
+          "sha256": "f866bf007ce1ac0d826969e77febb226acbf33e97c11da24ad195d93b46a6fec",
+          "asset_id": 616110331
+        },
+        {
+          "name": "sim-Stack_Bowls_Two.tar.gz.part018",
+          "bytes": 1800000000,
+          "sha256": "e52e6198264adb4bc5fcbe7e3ae3462f16f83ab9e8b8ef009d864fe3dc57d120",
+          "asset_id": 616116965
+        },
+        {
+          "name": "sim-Stack_Bowls_Two.tar.gz.part019",
+          "bytes": 1800000000,
+          "sha256": "60d41907f29a640d28d3e9e7d8b4d572500e6a78ae0471c8266ba1bbb9edba12",
+          "asset_id": 616123513
+        },
+        {
+          "name": "sim-Stack_Bowls_Two.tar.gz.part020",
+          "bytes": 1800000000,
+          "sha256": "ea1f35bb3fddba379a79b3e221b853041091cf5a5fbb88a33e45a51254516cd0",
+          "asset_id": 616130135
+        },
+        {
+          "name": "sim-Stack_Bowls_Two.tar.gz.part021",
+          "bytes": 1800000000,
+          "sha256": "0a7f34b8f843ad719df862eae5e8a74fe0667e7dd2d1e027b4ac59357426d5d8",
+          "asset_id": 616137412
+        },
+        {
+          "name": "sim-Stack_Bowls_Two.tar.gz.part022",
+          "bytes": 1800000000,
+          "sha256": "912e9c62ba08a9113cda8c982974eb192debef7bf7558cd227c061b1bb8105da",
+          "asset_id": 616143989
+        },
+        {
+          "name": "sim-Stack_Bowls_Two.tar.gz.part023",
+          "bytes": 1800000000,
+          "sha256": "3cf6b2e9c4c6185feb4166ae1c9fefc9aa586a1ec4075b1213b6a8b64379b1cb",
+          "asset_id": 616150046
+        },
+        {
+          "name": "sim-Stack_Bowls_Two.tar.gz.part024",
+          "bytes": 1800000000,
+          "sha256": "4e7341849c3bce60381be0824b61753d5f5b2c635db995636c986fa83f142d42",
+          "asset_id": 616156643
+        },
+        {
+          "name": "sim-Stack_Bowls_Two.tar.gz.part025",
+          "bytes": 1800000000,
+          "sha256": "705ea7fa436c7794a2e7044033c61912643de81f152e2a6baaafc234489a82ce",
+          "asset_id": 616164470
+        },
+        {
+          "name": "sim-Stack_Bowls_Two.tar.gz.part026",
+          "bytes": 1800000000,
+          "sha256": "13b7f9f7ef92e24b7a041e8e2db2cf916a75dfaa7103bad9c3e87305f0f5db13",
+          "asset_id": 616292052
+        },
+        {
+          "name": "sim-Stack_Bowls_Two.tar.gz.part027",
+          "bytes": 1800000000,
+          "sha256": "b6ba6209a69f77301e0f77ee533f1249faddfdf4a2e979bc2a2d213e32c803bc",
+          "asset_id": 616298090
+        },
+        {
+          "name": "sim-Stack_Bowls_Two.tar.gz.part028",
+          "bytes": 1800000000,
+          "sha256": "e105c74d906becb16bdb701c7bfbb6604323ed456442fe7dfdce22973832286f",
+          "asset_id": 616305524
+        },
+        {
+          "name": "sim-Stack_Bowls_Two.tar.gz.part029",
+          "bytes": 1800000000,
+          "sha256": "d0772c2621d8dc9417e57b58a8a16ece3e8e3e57e2dc1ab8a6a308937bb63f4f",
+          "asset_id": 616311802
+        },
+        {
+          "name": "sim-Stack_Bowls_Two.tar.gz.part030",
+          "bytes": 1800000000,
+          "sha256": "c83ceb634da73b9c8aa1796a0e95af8e7d3d9dd282bc645705a4b0ed0d53703d",
+          "asset_id": 616318700
+        },
+        {
+          "name": "sim-Stack_Bowls_Two.tar.gz.part031",
+          "bytes": 1800000000,
+          "sha256": "a6c098067f6dd608a89ef0f7e5baae70b9cd4d4e3294e3b8c55b1e433b6224eb",
+          "asset_id": 616325696
+        },
+        {
+          "name": "sim-Stack_Bowls_Two.tar.gz.part032",
+          "bytes": 1800000000,
+          "sha256": "b87c3e2dc942b6536be415e809cc646d50d9a9d59c290576a807368ab1e83c86",
+          "asset_id": 616332323
+        },
+        {
+          "name": "sim-Stack_Bowls_Two.tar.gz.part033",
+          "bytes": 1800000000,
+          "sha256": "ec08b30004f4e872c0f3d0d4251e78ab1fd5f1ca12e40818cbbc8dcb84ff01e9",
+          "asset_id": 616339808
+        },
+        {
+          "name": "sim-Stack_Bowls_Two.tar.gz.part034",
+          "bytes": 1800000000,
+          "sha256": "89bdf74a69bb547826601f59b1dddaf739ec39f3bea58e19eba2a8e652837510",
+          "asset_id": 616346763
+        },
+        {
+          "name": "sim-Stack_Bowls_Two.tar.gz.part035",
+          "bytes": 1800000000,
+          "sha256": "3b9806b389c8a1d9bd331370973747eb46fe28ca6ecca3a21c83587b54b1434f",
+          "asset_id": 616353335
+        },
+        {
+          "name": "sim-Stack_Bowls_Two.tar.gz.part036",
+          "bytes": 1800000000,
+          "sha256": "f72519aa05ca9066f5895f0844b4b685bfd5c7d03bb5a9322c202f94b8252b3e",
+          "asset_id": 616360040
+        },
+        {
+          "name": "sim-Stack_Bowls_Two.tar.gz.part037",
+          "bytes": 499565030,
+          "sha256": "2e671ebac788ae0c5fb52a986a11d33bcbc596a841a34101626e3e23f66fc8ae",
+          "asset_id": 616367084
+        }
+      ]
+    },
+    {
+      "name": "package-metadata",
+      "kind": "metadata",
+      "task": null,
+      "archive_bytes": 2671172,
+      "sha256": "9e4d35962a6e3ddda456dca27974bb6fadc31fd0c465657dcaa8f24a7166a3b1",
+      "parts": [
+        {
+          "name": "package-metadata.tar.gz.part001",
+          "bytes": 2671172,
+          "sha256": "9e4d35962a6e3ddda456dca27974bb6fadc31fd0c465657dcaa8f24a7166a3b1",
+          "asset_id": 616368869
+        }
+      ]
+    }
+  ],
+  "datasets": [
+    {
+      "kind": "sim",
+      "task": "Adjust_Bottle",
+      "relative_path": "sim/Adjust_Bottle",
+      "episode_count": 100,
+      "frames": 41049,
+      "fps": [
+        10
+      ],
+      "file_count": 123447,
+      "bytes": 29783886053
+    },
+    {
+      "kind": "sim",
+      "task": "Grab_Roller",
+      "relative_path": "sim/Grab_Roller",
+      "episode_count": 100,
+      "frames": 16041,
+      "fps": [
+        10
+      ],
+      "file_count": 48423,
+      "bytes": 19257618132
+    },
+    {
+      "kind": "sim",
+      "task": "Stack_Bowls_Two",
+      "relative_path": "sim/Stack_Bowls_Two",
+      "episode_count": 100,
+      "frames": 66648,
+      "fps": [
+        10
+      ],
+      "file_count": 200244,
+      "bytes": 68076076305
+    },
+    {
+      "kind": "real",
+      "task": "Adjust_Bottle",
+      "relative_path": "real/Adjust_Bottle",
+      "episode_count": 100,
+      "frames": 78591,
+      "fps": 30,
+      "file_count": 23,
+      "bytes": 1736835851
+    },
+    {
+      "kind": "real",
+      "task": "Grab_Roller",
+      "relative_path": "real/Grab_Roller",
+      "episode_count": 100,
+      "frames": 53235,
+      "fps": 30,
+      "file_count": 38,
+      "bytes": 1121936655
+    },
+    {
+      "kind": "real",
+      "task": "Stack_Bowls_Two",
+      "relative_path": "real/Stack_Bowls_Two",
+      "episode_count": 100,
+      "frames": 78245,
+      "fps": 30,
+      "file_count": 21,
+      "bytes": 1778316764
+    }
+  ]
+}

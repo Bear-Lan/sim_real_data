@@ -1,0 +1,75 @@
+{
+  "status": "verified_complete",
+  "created_local_time": "2026-10-07 00:07:12",
+  "total_episodes": 600,
+  "root": "E:\\code_product\\sim_real_data",
+  "datasets": [
+    {
+      "kind": "sim",
+      "task": "Adjust_Bottle",
+      "relative_path": "sim/Adjust_Bottle",
+      "episode_count": 100,
+      "frames": 41049,
+      "fps": [
+        10
+      ],
+      "file_count": 123447,
+      "bytes": 29783886053
+    },
+    {
+      "kind": "sim",
+      "task": "Grab_Roller",
+      "relative_path": "sim/Grab_Roller",
+      "episode_count": 100,
+      "frames": 16041,
+      "fps": [
+        10
+      ],
+      "file_count": 48423,
+      "bytes": 19257618132
+    },
+    {
+      "kind": "sim",
+      "task": "Stack_Bowls_Two",
+      "relative_path": "sim/Stack_Bowls_Two",
+      "episode_count": 100,
+      "frames": 66648,
+      "fps": [
+        10
+      ],
+      "file_count": 200244,
+      "bytes": 68076076305
+    },
+    {
+      "kind": "real",
+      "task": "Adjust_Bottle",
+      "relative_path": "real/Adjust_Bottle",
+      "episode_count": 100,
+      "frames": 78591,
+      "fps": 30,
+      "file_count": 23,
+      "bytes": 1736835851
+    },
+    {
+      "kind": "real",
+      "task": "Grab_Roller",
+      "relative_path": "real/Grab_Roller",
+      "episode_count": 100,
+      "frames": 53235,
+      "fps": 30,
+      "file_count": 38,
+      "bytes": 1121936655
+    },
+    {
+      "kind": "real",
+      "task": "Stack_Bowls_Two",
+      "relative_path": "real/Stack_Bowls_Two",
+      "episode_count": 100,
+      "frames": 78245,
+      "fps": 30,
+      "file_count": 21,
+      "bytes": 1778316764
+    }
+  ],
+  "total_bytes": 121754669760
+}
