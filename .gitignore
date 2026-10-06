@@ -1,0 +1,9 @@
+/sim/
+/real/
+/sim_inventory.json
+/real_inventory.json
+/verification_report.json
+/release_state.json
+/.downloads/
+*.partial
+__pycache__/
