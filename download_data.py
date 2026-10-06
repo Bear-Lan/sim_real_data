@@ -56,7 +56,16 @@ def extract_safe(archive, target):
             else:
                 path.parent.mkdir(parents=True, exist_ok=True)
                 if path.exists():
-                    raise FileExistsError(f'Refusing to overwrite: {path}')
+                    if not path.is_file() or path.stat().st_size != member.size:
+                        raise FileExistsError(f'Refusing to overwrite: {path}')
+                    existing = sha256(path)
+                    incoming = hashlib.sha256()
+                    with tar.extractfile(member) as source:
+                        for block in iter(lambda: source.read(1024*1024), b''):
+                            incoming.update(block)
+                    if incoming.hexdigest() != existing:
+                        raise FileExistsError(f'Refusing to overwrite different data: {path}')
+                    continue  # Resume extraction without modifying a verified existing file.
                 with tar.extractfile(member) as source, path.open('wb') as output:
                     shutil.copyfileobj(source, output, length=1024*1024)
 
