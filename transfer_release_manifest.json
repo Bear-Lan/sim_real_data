@@ -1,0 +1,42 @@
+{
+  "status": "verified_complete",
+  "repository": "Bear-Lan/sim_real_data",
+  "tag": "real-transfer-20261010",
+  "total_episodes": 100,
+  "total_raw_bytes": 2752525728,
+  "groups": [
+    {
+      "name": "real-transfer",
+      "kind": "real",
+      "task": "transfer",
+      "archive_bytes": 2555190688,
+      "sha256": "6ee01c902b1023de996d34710d6e3e4c0039b12106f56ef42ed8ce798ccec369",
+      "parts": [
+        {
+          "name": "real-transfer.tar.gz.part001",
+          "bytes": 1800000000,
+          "sha256": "18dfcb8e86def84615328d10153a8aefff19614670d28b932281acc4a1af260a",
+          "asset_id": 628304029
+        },
+        {
+          "name": "real-transfer.tar.gz.part002",
+          "bytes": 755190688,
+          "sha256": "6e72cac8f94d4be24b8c566a66f3416efe423a198463bdd6913e823000a44053",
+          "asset_id": 628309770
+        }
+      ]
+    }
+  ],
+  "datasets": [
+    {
+      "task": "transfer",
+      "kind": "real",
+      "format": "v3.0",
+      "fps": 30,
+      "episode_count": 100,
+      "frames": 100681,
+      "bytes": 2752525728
+    }
+  ],
+  "inventory_asset": "transfer_inventory.json"
+}

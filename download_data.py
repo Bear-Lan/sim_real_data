@@ -1,4 +1,4 @@
-"""Restore the six original datasets from verified GitHub Release parts.
+"""Restore original datasets from verified GitHub Release parts.
 
 Python 3.10+, standard library only. No credentials required for public release.
 """
@@ -12,7 +12,7 @@ import urllib.request
 
 REPO = 'Bear-Lan/sim_real_data'
 TAG = 'dataset-20261006'
-TASKS = ('Adjust_Bottle', 'Grab_Roller', 'Stack_Bowls_Two')
+TASKS = ('Adjust_Bottle', 'Grab_Roller', 'Stack_Bowls_Two', 'transfer')
 
 
 def fetch_json(url):
@@ -74,8 +74,10 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', required=True, type=Path)
     parser.add_argument('--task', choices=TASKS)
+    parser.add_argument('--tag', help='Release tag; transfer defaults to real-transfer-20261010')
     args = parser.parse_args()
-    release = fetch_json(f'https://api.github.com/repos/{REPO}/releases/tags/{TAG}')
+    tag = args.tag or ('real-transfer-20261010' if args.task == 'transfer' else TAG)
+    release = fetch_json(f'https://api.github.com/repos/{REPO}/releases/tags/{tag}')
     assets = {a['name']: a for a in release['assets']}
     manifest = fetch_json(assets['release_manifest.json']['browser_download_url'])
     if manifest['status'] != 'verified_complete':
@@ -114,6 +116,15 @@ def main():
         extract_safe(archive, target)
         marker.write_text(json.dumps({'sha256':group['sha256'],'target':str(target)}))
         archive.unlink()  # Raw extracted data remains; only verified temporary archive is removed.
+    if manifest.get('inventory_asset'):
+        name = manifest['inventory_asset']
+        if Path(name).name != name:
+            raise ValueError('Unsafe inventory filename')
+        asset = assets[name]
+        expected_hash = asset.get('digest', '').removeprefix('sha256:')
+        if len(expected_hash) != 64:
+            raise ValueError('Inventory asset has no SHA256 digest')
+        get_file(asset['browser_download_url'], output/name, expected_hash)
     print(f'Finished: {output}', flush=True)
 
 

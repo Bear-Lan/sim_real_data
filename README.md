@@ -2,6 +2,16 @@
 
 本数据包整理 Adjust_Bottle、Grab_Roller、Stack_Bowls_Two：每个任务仿真 100 条、真机 100 条，共 600 条 episode。原数据保留，本文件夹是完整独立副本，不依赖原路径的链接。
 
+## 新增真机 transfer 任务
+
+`real-transfer-20261010` Release 单独提供原始 `transfer` 真机数据：LeRobot v3、30 Hz、100 条 episode、100,681 帧、三路 AV1 视频及 18 维状态/动作，原始文件约 2.56 GiB。保留采集时全部记录，不重编码、不重采样。该任务没有配套仿真数据。其中 episode 18 只有 5 帧、episode 72 只有 2 帧，下载后的 `transfer_inventory.json` 列出逐条长度及逐文件 SHA256；原始采集条数不等于已重新审核的成功示范条数。
+
+```powershell
+python download_data.py --output E:/datasets/sim_real_data --task transfer
+```
+
+该命令仅下载新增任务，校验后还原至 `real/transfer`。原有默认下载命令仍下载最初六组600条数据，原有 Release 保留。
+
 ## GitHub 下载方式（不使用 Git LFS）
 
 完整数据体积约 113 GiB，不放入普通 Git，也不使用 Git LFS。仓库保存说明、映射参考和下载脚本；完整原始数据放在本仓库的 GitHub Release 分卷附件中。Release 只有在全部附件上传、数量及传输校验通过后才会发布；发布前不会向读者提供不完整的数据下载。

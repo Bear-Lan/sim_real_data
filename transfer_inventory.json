@@ -1,0 +1,525 @@
+{
+  "task": "transfer",
+  "kind": "real",
+  "format": "v3.0",
+  "fps": 30,
+  "episode_count": 100,
+  "frames": 100681,
+  "file_count": 20,
+  "bytes": 2752525728,
+  "episodes": [
+    {
+      "episode_index": 0,
+      "frames": 1376
+    },
+    {
+      "episode_index": 1,
+      "frames": 1425
+    },
+    {
+      "episode_index": 2,
+      "frames": 1191
+    },
+    {
+      "episode_index": 3,
+      "frames": 951
+    },
+    {
+      "episode_index": 4,
+      "frames": 1097
+    },
+    {
+      "episode_index": 5,
+      "frames": 1026
+    },
+    {
+      "episode_index": 6,
+      "frames": 1137
+    },
+    {
+      "episode_index": 7,
+      "frames": 999
+    },
+    {
+      "episode_index": 8,
+      "frames": 1154
+    },
+    {
+      "episode_index": 9,
+      "frames": 1208
+    },
+    {
+      "episode_index": 10,
+      "frames": 1048
+    },
+    {
+      "episode_index": 11,
+      "frames": 978
+    },
+    {
+      "episode_index": 12,
+      "frames": 829
+    },
+    {
+      "episode_index": 13,
+      "frames": 1156
+    },
+    {
+      "episode_index": 14,
+      "frames": 931
+    },
+    {
+      "episode_index": 15,
+      "frames": 786
+    },
+    {
+      "episode_index": 16,
+      "frames": 924
+    },
+    {
+      "episode_index": 17,
+      "frames": 1065
+    },
+    {
+      "episode_index": 18,
+      "frames": 5
+    },
+    {
+      "episode_index": 19,
+      "frames": 888
+    },
+    {
+      "episode_index": 20,
+      "frames": 825
+    },
+    {
+      "episode_index": 21,
+      "frames": 901
+    },
+    {
+      "episode_index": 22,
+      "frames": 856
+    },
+    {
+      "episode_index": 23,
+      "frames": 933
+    },
+    {
+      "episode_index": 24,
+      "frames": 757
+    },
+    {
+      "episode_index": 25,
+      "frames": 976
+    },
+    {
+      "episode_index": 26,
+      "frames": 1048
+    },
+    {
+      "episode_index": 27,
+      "frames": 943
+    },
+    {
+      "episode_index": 28,
+      "frames": 795
+    },
+    {
+      "episode_index": 29,
+      "frames": 854
+    },
+    {
+      "episode_index": 30,
+      "frames": 797
+    },
+    {
+      "episode_index": 31,
+      "frames": 1189
+    },
+    {
+      "episode_index": 32,
+      "frames": 1085
+    },
+    {
+      "episode_index": 33,
+      "frames": 2213
+    },
+    {
+      "episode_index": 34,
+      "frames": 1633
+    },
+    {
+      "episode_index": 35,
+      "frames": 1247
+    },
+    {
+      "episode_index": 36,
+      "frames": 915
+    },
+    {
+      "episode_index": 37,
+      "frames": 874
+    },
+    {
+      "episode_index": 38,
+      "frames": 772
+    },
+    {
+      "episode_index": 39,
+      "frames": 1420
+    },
+    {
+      "episode_index": 40,
+      "frames": 763
+    },
+    {
+      "episode_index": 41,
+      "frames": 829
+    },
+    {
+      "episode_index": 42,
+      "frames": 820
+    },
+    {
+      "episode_index": 43,
+      "frames": 869
+    },
+    {
+      "episode_index": 44,
+      "frames": 741
+    },
+    {
+      "episode_index": 45,
+      "frames": 850
+    },
+    {
+      "episode_index": 46,
+      "frames": 890
+    },
+    {
+      "episode_index": 47,
+      "frames": 875
+    },
+    {
+      "episode_index": 48,
+      "frames": 788
+    },
+    {
+      "episode_index": 49,
+      "frames": 867
+    },
+    {
+      "episode_index": 50,
+      "frames": 939
+    },
+    {
+      "episode_index": 51,
+      "frames": 944
+    },
+    {
+      "episode_index": 52,
+      "frames": 762
+    },
+    {
+      "episode_index": 53,
+      "frames": 963
+    },
+    {
+      "episode_index": 54,
+      "frames": 1143
+    },
+    {
+      "episode_index": 55,
+      "frames": 1003
+    },
+    {
+      "episode_index": 56,
+      "frames": 1170
+    },
+    {
+      "episode_index": 57,
+      "frames": 909
+    },
+    {
+      "episode_index": 58,
+      "frames": 762
+    },
+    {
+      "episode_index": 59,
+      "frames": 755
+    },
+    {
+      "episode_index": 60,
+      "frames": 1128
+    },
+    {
+      "episode_index": 61,
+      "frames": 1008
+    },
+    {
+      "episode_index": 62,
+      "frames": 1007
+    },
+    {
+      "episode_index": 63,
+      "frames": 1056
+    },
+    {
+      "episode_index": 64,
+      "frames": 1230
+    },
+    {
+      "episode_index": 65,
+      "frames": 1053
+    },
+    {
+      "episode_index": 66,
+      "frames": 1040
+    },
+    {
+      "episode_index": 67,
+      "frames": 1684
+    },
+    {
+      "episode_index": 68,
+      "frames": 1400
+    },
+    {
+      "episode_index": 69,
+      "frames": 1101
+    },
+    {
+      "episode_index": 70,
+      "frames": 1048
+    },
+    {
+      "episode_index": 71,
+      "frames": 1684
+    },
+    {
+      "episode_index": 72,
+      "frames": 2
+    },
+    {
+      "episode_index": 73,
+      "frames": 1350
+    },
+    {
+      "episode_index": 74,
+      "frames": 1154
+    },
+    {
+      "episode_index": 75,
+      "frames": 1075
+    },
+    {
+      "episode_index": 76,
+      "frames": 1138
+    },
+    {
+      "episode_index": 77,
+      "frames": 879
+    },
+    {
+      "episode_index": 78,
+      "frames": 1040
+    },
+    {
+      "episode_index": 79,
+      "frames": 1256
+    },
+    {
+      "episode_index": 80,
+      "frames": 683
+    },
+    {
+      "episode_index": 81,
+      "frames": 777
+    },
+    {
+      "episode_index": 82,
+      "frames": 899
+    },
+    {
+      "episode_index": 83,
+      "frames": 1087
+    },
+    {
+      "episode_index": 84,
+      "frames": 912
+    },
+    {
+      "episode_index": 85,
+      "frames": 888
+    },
+    {
+      "episode_index": 86,
+      "frames": 967
+    },
+    {
+      "episode_index": 87,
+      "frames": 868
+    },
+    {
+      "episode_index": 88,
+      "frames": 1231
+    },
+    {
+      "episode_index": 89,
+      "frames": 1000
+    },
+    {
+      "episode_index": 90,
+      "frames": 1220
+    },
+    {
+      "episode_index": 91,
+      "frames": 953
+    },
+    {
+      "episode_index": 92,
+      "frames": 837
+    },
+    {
+      "episode_index": 93,
+      "frames": 1360
+    },
+    {
+      "episode_index": 94,
+      "frames": 894
+    },
+    {
+      "episode_index": 95,
+      "frames": 776
+    },
+    {
+      "episode_index": 96,
+      "frames": 1028
+    },
+    {
+      "episode_index": 97,
+      "frames": 1483
+    },
+    {
+      "episode_index": 98,
+      "frames": 784
+    },
+    {
+      "episode_index": 99,
+      "frames": 852
+    }
+  ],
+  "files": [
+    {
+      "path": "data/chunk-000/file-000.parquet",
+      "bytes": 6041003,
+      "sha256": "38b0f3e6832e58ab0e4658cd5dddedec62aa5e6a99bbac1fb6bf95aaa247a05f"
+    },
+    {
+      "path": "meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 642526,
+      "sha256": "787bffe7b6173c9f5cdef446173b431264466778a84297887c82d756f879a848"
+    },
+    {
+      "path": "meta/info.json",
+      "bytes": 5402,
+      "sha256": "5f5aa5884d360e56d9a758293e4b63303faa854da14300fab1d10c292dd04d15"
+    },
+    {
+      "path": "meta/stats.json",
+      "bytes": 23214,
+      "sha256": "e39206ed4ef6ae1d19bbf882d363e8d2c32f88902994e80d1816c531ece6d31c"
+    },
+    {
+      "path": "meta/tasks.parquet",
+      "bytes": 2030,
+      "sha256": "0c0edbe2479b86dd36378c51bddc24be4d85239ee037d2f72562e69ec053fc48"
+    },
+    {
+      "path": "videos/observation.images.front/chunk-000/file-000.mp4",
+      "bytes": 203813961,
+      "sha256": "acb9718b13b3cbecba52b36343fcbf4aad9ed93ff776063fbe32f1fa887fc189"
+    },
+    {
+      "path": "videos/observation.images.front/chunk-000/file-001.mp4",
+      "bytes": 196824001,
+      "sha256": "bff726ed865e0b57ba82768df5896aabfc6e3fe9499c1282650bc28d2808071a"
+    },
+    {
+      "path": "videos/observation.images.front/chunk-000/file-002.mp4",
+      "bytes": 202897503,
+      "sha256": "8e9a4cd752d84db6543e4caaa6ed0967cc52478c26e4a470f08c409f6b99fac4"
+    },
+    {
+      "path": "videos/observation.images.front/chunk-000/file-003.mp4",
+      "bytes": 204579429,
+      "sha256": "0d2f3080a23c256ab0df2786e0c6b7a4b4d12f702faf0cfaae5be4cf936492bd"
+    },
+    {
+      "path": "videos/observation.images.front/chunk-000/file-004.mp4",
+      "bytes": 202886481,
+      "sha256": "75e418ced9b46b341051765efec2568ba00b73c042ebce4f510879e261d986d6"
+    },
+    {
+      "path": "videos/observation.images.front/chunk-000/file-005.mp4",
+      "bytes": 150562307,
+      "sha256": "310a47aa70ce71baf3c787b3262e485424198ea7716e686d3a653bb507fb4f94"
+    },
+    {
+      "path": "videos/observation.images.left_wrist/chunk-000/file-000.mp4",
+      "bytes": 209240160,
+      "sha256": "2752299ce84f9814abc40ae4f07e53a8f017f9eedbd14313cbb7f7d3af621c6f"
+    },
+    {
+      "path": "videos/observation.images.left_wrist/chunk-000/file-001.mp4",
+      "bytes": 206969255,
+      "sha256": "610acbea588d825f5637d5ea3cd245450ae6bdbf1ac30b9c8e60ffcccbee23ab"
+    },
+    {
+      "path": "videos/observation.images.left_wrist/chunk-000/file-002.mp4",
+      "bytes": 207250430,
+      "sha256": "b23392562ce6a869321a02c66ce5f807aabfe9be9389b09756b65457c62aae93"
+    },
+    {
+      "path": "videos/observation.images.left_wrist/chunk-000/file-003.mp4",
+      "bytes": 26018336,
+      "sha256": "edfcbb64be730255eb35c3aeacbee2b36beac9444750b81ccdfbbf9d5461af89"
+    },
+    {
+      "path": "videos/observation.images.right_wrist/chunk-000/file-000.mp4",
+      "bytes": 207755423,
+      "sha256": "e702ff5da87bb9103f0faf1f153fee30b1b69a21682f7bab4cc734947e8f78d7"
+    },
+    {
+      "path": "videos/observation.images.right_wrist/chunk-000/file-001.mp4",
+      "bytes": 204622212,
+      "sha256": "b5a8b56d388d62faa51267a0bf656f3d717802805988ea1f0f804cb8d1e4f052"
+    },
+    {
+      "path": "videos/observation.images.right_wrist/chunk-000/file-002.mp4",
+      "bytes": 208553609,
+      "sha256": "da0c922692f61356ada1d0a723d09ee3baa126abbaac65ea08b07b1ccaa225f9"
+    },
+    {
+      "path": "videos/observation.images.right_wrist/chunk-000/file-003.mp4",
+      "bytes": 203880940,
+      "sha256": "b0fa5b09816a4d2ee36210499f62d760676bf01c5415192de03d104105b3d6c0"
+    },
+    {
+      "path": "videos/observation.images.right_wrist/chunk-000/file-004.mp4",
+      "bytes": 109957506,
+      "sha256": "2ff8f7d9627ae64ae18bd3196d66dc501acc2d8c4ba7c6b56bb2b0f060c9b5a6"
+    }
+  ],
+  "short_episodes_under_30_frames": [
+    {
+      "episode_index": 18,
+      "frames": 5
+    },
+    {
+      "episode_index": 72,
+      "frames": 2
+    }
+  ],
+  "verification": "Episode counts, lengths, finite state/actions, referenced video existence, file SHA256. No task-success or video-decoding audit claimed."
+}
