@@ -1,6 +1,21 @@
-# 三任务仿真 / 真机数据包
+# 仿真 / 真机机器人数据集（700 条记录）
 
-本数据包整理 Adjust_Bottle、Grab_Roller、Stack_Bowls_Two：每个任务仿真 100 条、真机 100 条，共 600 条 episode。原数据保留，本文件夹是完整独立副本，不依赖原路径的链接。
+本仓库发布4个任务、7组原始数据，共 **700 条 episode：仿真300条、真机400条**。Adjust_Bottle、Grab_Roller、Stack_Bowls_Two 各有仿真100条和真机100条；transfer 只有真机100条。数据本体保存在两个已公开的 GitHub Release 中，克隆仓库只获得说明、下载脚本和清单。
+
+## 数据总览
+
+| 任务 | 仿真 episode / 帧数 | 真机 episode / 帧数 | Release |
+| --- | --- | --- | --- |
+| Adjust_Bottle | 100 / 41,049 | 100 / 78,591 | dataset-20261006 |
+| Grab_Roller | 100 / 16,041 | 100 / 53,235 | dataset-20261006 |
+| Stack_Bowls_Two | 100 / 66,648 | 100 / 78,245 | dataset-20261006 |
+| transfer | 无 | 100 / 100,681 | real-transfer-20261010 |
+| 合计 | 300 / 123,738 | 400 / 310,752 | 两个 Release |
+
+- [原有三个任务：600条数据](https://github.com/Bear-Lan/sim_real_data/releases/tag/dataset-20261006)，原始文件约113.4 GiB。
+- [新增 transfer 真机任务：100条记录](https://github.com/Bear-Lan/sim_real_data/releases/tag/real-transfer-20261010)，原始文件约2.56 GiB。
+
+合计原始文件124,507,195,488字节，约116.0 GiB。两批独立发布，原有600条数据的 Release 和校验清单保持不变。
 
 ## 新增真机 transfer 任务
 
@@ -14,21 +29,31 @@ python download_data.py --output E:/datasets/sim_real_data --task transfer
 
 ## GitHub 下载方式（不使用 Git LFS）
 
-完整数据体积约 113 GiB，不放入普通 Git，也不使用 Git LFS。仓库保存说明、映射参考和下载脚本；完整原始数据放在本仓库的 GitHub Release 分卷附件中。Release 只有在全部附件上传、数量及传输校验通过后才会发布；发布前不会向读者提供不完整的数据下载。
+数据不放入普通 Git，也不使用 Git LFS。仓库保存说明、映射参考和下载脚本；原始数据放在上述两个已发布的 GitHub Release 分卷附件中，全部分卷已核对大小和 SHA256。
 
-下载时需要 Python 3.10 或更新版本。安装 Python 后，在本仓库克隆目录运行：
+下载需要 Git 和 Python 3.10 或更新版本。脚本只使用 Python 标准库，公开下载无需账号或 token。先克隆仓库：
+
+```powershell
+git clone https://github.com/Bear-Lan/sim_real_data.git
+cd sim_real_data
+```
+
+下载全部 **700条**需要执行以下两条命令，使用同一个输出目录：
 
 ```powershell
 python download_data.py --output E:/datasets/sim_real_data
+python download_data.py --output E:/datasets/sim_real_data --task transfer
 ```
 
-也可以只下载某一个任务：
+**默认命令仅下载原有600条，不包含 transfer。** `--task transfer` 自动选择新增 Release；其他任务及默认命令选择原有 Release。可用 `--tag` 显式指定标签。也可以只下载某一个原有任务的仿真和真机数据：
 
 ```powershell
 python download_data.py --output E:/datasets/sim_real_data --task Grab_Roller
 ```
 
-脚本逐卷校验 SHA256，合并、解压至 sim / real 对应任务目录。原始数据和校验文档保留原格式。完整下载需要约 113 GiB 的数据空间，另需保留最大单任务压缩包的临时空间；建议准备至少 200 GiB 可用空间。此处公开的是实验采集数据，不包含 SSH / Hugging Face / GitHub 凭据。
+脚本逐卷校验 SHA256，按顺序合并并核对完整压缩包 SHA256 后，解压至 sim / real 对应任务目录。分卷是同一压缩包的连续字节段，不能单独解压，无需手动合并。原始数据和校验文档保留原格式。全部700条需要约116 GiB数据空间及最大单任务压缩包的临时空间，建议至少200 GiB可用空间。解压完成后脚本删除自己的临时压缩包，保留数据和恢复记录。
+
+以下目录对应两条下载命令均执行完成后的输出：
 
 ```text
 sim_real_data/
@@ -38,10 +63,12 @@ sim_real_data/
   real/Adjust_Bottle/      真机 LeRobot v3，100 条
   real/Grab_Roller/        真机 LeRobot v3，100 条
   real/Stack_Bowls_Two/    真机 LeRobot v3，100 条
+  real/transfer/           真机 LeRobot v3，100 条（含两条极短记录）
   reference/              已有接口映射代码与说明
   sim_inventory.json      仿真来源、episode、文件大小清单
   real_inventory.json     真机来源、文件大小及 SHA256
-  verification_report.json  最终数量和复制校验报告
+  verification_report.json  原有600条数据的复制校验报告
+  transfer_inventory.json   transfer 逐条长度、文件大小及 SHA256
 ```
 
 ## 数据格式
@@ -55,11 +82,15 @@ sim_real_data/
 ## 使用前注意
 
 1. 仿真夹爪字段是两指总开口（米），真机字段是电机角度（弧度）。已有 V2 换算为 `real_gripper_rad = sim_opening_m / 0.10 * (-4.5)`；升降的米 / 毫米换算为 `real_height_mm = sim_height_m * 1000`。本包保留原单位，没有套用换算。
-2. reference 中的映射文档来自 Adjust_Bottle 的既有训练实验；它不是另外两个任务已完成跨域校准的证明。手臂零位、方向、相机、限位、起始姿态和动力学仍需核对。
-3. 仿真 Stack_Bowls_Two 按场景指定的底碗先搬：bowl0 右手、bowl1 左手；底碗可随机变化。已检查的真机 100 条都是右手先、左手后，本次仅整理，不改动顺序或重新筛选。
+2. reference 中的映射文档来自 Adjust_Bottle 的既有训练实验；它不是其他任务已完成跨域校准的证明。手臂零位、方向、相机、限位、起始姿态和动力学仍需核对。
+3. 仿真 Stack_Bowls_Two 按场景指定的底碗先搬：bowl0 右手、bowl1 左手；底碗可随机变化，100条中61条左手先、39条右手先。已检查的真机100条都是右手先、左手后，发布时不改动顺序或重新筛选。
 4. 仿真 success=true 是仿真采集判定，不代表真机部署安全；真机 100 条是原始采集条数，不额外宣称已用仿真判据重新审核成功率。
-5. 将整个 sim_real_data 文件夹发给对方即可。只有 verification_report.json 的 status 为 verified_complete 时，本次整理才算完成。
+5. transfer 原样保留 episode 18（5帧）和 episode 72（2帧）。训练时可按自己的规则筛选；100条原始记录不等于100条已审核的成功示范。该任务没有配套仿真数据。
 
 ## 复制校验
 
 仿真导出只选 success=true 且 complete=true 的完整 episode，核对轨迹帧数、三路图像文件名、时间戳和数值有限性。服务器低优先级无损归档；下载归档 SHA256 校验通过后解包，并核对每个文件大小和每条 metadata 的 SHA256。真机按实际 Parquet episode_index 验证 100 条和总帧数，复制后逐文件 SHA256 比较。原始采集的图像内容验证报告（若有）独立于本次传输校验。
+
+transfer 核对100个 episode ID、100,681帧、逐条长度、帧编号、状态/动作有限性及 metadata 引用的视频文件存在性。无损归档中的20个源文件均逐文件核对 SHA256，分卷核对 GitHub 返回的大小与 SHA256。未额外执行整段视频解码审计或任务成功率审核。
+
+`verification_report.json`、`sim_inventory.json` 和 `real_inventory.json` 仅覆盖原有600条。transfer 的校验范围与逐条长度记录在 `transfer_inventory.json`。仓库中的 `release_manifest.json` 对应原有600条，`transfer_release_manifest.json` 对应新增100条；两份清单均为 `status=verified_complete`。两个 Release 的附件各自有一份 `release_manifest.json`，下载脚本按所选 Release 读取，不将清单混用。
