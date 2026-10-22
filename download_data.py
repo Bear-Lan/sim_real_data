@@ -12,7 +12,11 @@ import urllib.request
 
 REPO = 'Bear-Lan/sim_real_data'
 TAG = 'dataset-20261006'
-TASKS = ('Adjust_Bottle', 'Grab_Roller', 'Stack_Bowls_Two', 'transfer')
+TASK_RELEASE = {
+    'transfer': 'real-transfer-20261010',
+    'PickBall': 'real-pickball-20261022',
+}
+TASKS = ('Adjust_Bottle', 'Grab_Roller', 'Stack_Bowls_Two', *TASK_RELEASE)
 
 
 def fetch_json(url):
@@ -74,9 +78,9 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', required=True, type=Path)
     parser.add_argument('--task', choices=TASKS)
-    parser.add_argument('--tag', help='Release tag; transfer defaults to real-transfer-20261010')
+    parser.add_argument('--tag', help='Release tag; see TASK_RELEASE for per-task defaults')
     args = parser.parse_args()
-    tag = args.tag or ('real-transfer-20261010' if args.task == 'transfer' else TAG)
+    tag = args.tag or TASK_RELEASE.get(args.task, TAG)
     release = fetch_json(f'https://api.github.com/repos/{REPO}/releases/tags/{tag}')
     assets = {a['name']: a for a in release['assets']}
     manifest = fetch_json(assets['release_manifest.json']['browser_download_url'])
