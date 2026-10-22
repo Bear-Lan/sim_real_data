@@ -1,0 +1,36 @@
+{
+  "status": "verified_complete",
+  "repository": "Bear-Lan/sim_real_data",
+  "tag": "real-pickball-20261022",
+  "total_episodes": 101,
+  "total_raw_bytes": 760048365,
+  "groups": [
+    {
+      "name": "real-pickball",
+      "kind": "real",
+      "task": "PickBall",
+      "archive_bytes": 758211174,
+      "sha256": "afab5e6eeb38935e733930d75aeafc3fc8d3a4169b72c19be0c38001976d6d93",
+      "parts": [
+        {
+          "name": "real-pickball.tar.gz.part001",
+          "bytes": 758211174,
+          "sha256": "afab5e6eeb38935e733930d75aeafc3fc8d3a4169b72c19be0c38001976d6d93",
+          "asset_id": 665949870
+        }
+      ]
+    }
+  ],
+  "datasets": [
+    {
+      "task": "PickBall",
+      "kind": "real",
+      "format": "v3.0",
+      "fps": 20,
+      "episode_count": 101,
+      "frames": 32942,
+      "bytes": 760048365
+    }
+  ],
+  "inventory_asset": "pickball_inventory.json"
+}
