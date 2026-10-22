@@ -37,7 +37,7 @@ python download_data.py --output E:/datasets/sim_real_data --task transfer
 python download_data.py --output E:/datasets/sim_real_data --task PickBall
 ```
 
-校验后还原至 `real/PickBall`。该批的逐条长度、文件大小及 SHA256 记录在 `pickball_inventory.json`，Release 内另有一份 `pickball_release_manifest.json`。
+校验后还原至 `real/PickBall`。该批的逐条长度、文件大小及 SHA256 记录在 `pickball_inventory.json`；Release 附件里的清单沿用统一命名 `release_manifest.json`，仓库中对应的副本是 `pickball_release_manifest.json`。
 
 与 transfer 不同的是，本批 101 条记录长度分布正常：最短 252 帧、最长 493 帧、均值 326 帧（20 Hz 下约 12.6–24.7 秒），没有低于 30 帧的残片。101 是采集时的实际条数，不是 100 条筛出来的结果。
 
